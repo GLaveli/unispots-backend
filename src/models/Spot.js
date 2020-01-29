@@ -5,6 +5,7 @@ const SpotSchema = new mongoose.Schema({
     thumbnail: String,
     cellPhone: String,
     rooms: [],
+    reference: [],
     contract: String,
     contractTime: String,
     price: Number,
