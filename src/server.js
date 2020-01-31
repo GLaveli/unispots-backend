@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors')
 
 const routes = require('./routes');
 
@@ -10,11 +11,9 @@ mongoose.connect('mongodb+srv://NetUser:System_rw@kitnet-x03i0.mongodb.net/kitne
     useUnifiedTopology: true
 });
 
+app.use(cors());
+
 app.use(express.json());
 app.use(routes);
 
-app.get((req, res) => {
-    res.send("Server online");
-});
-
-app.listen(process.env.PORT || 3333);
+app.listen(3333);
