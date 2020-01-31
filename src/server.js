@@ -13,4 +13,8 @@ mongoose.connect('mongodb+srv://NetUser:System_rw@kitnet-x03i0.mongodb.net/kitne
 app.use(express.json());
 app.use(routes);
 
-app.listen(3333);
+app.get((req, res) => {
+    res.send("Server online");
+});
+
+app.listen(process.env.PORT || 3333);
