@@ -8,7 +8,7 @@ const SpotSchema = new mongoose.Schema({
     reference: [],
     contract: String,
     contractTime: String,
-    valor: Number,
+    valor: String,
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
