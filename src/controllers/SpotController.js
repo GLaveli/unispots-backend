@@ -29,7 +29,7 @@ module.exports = {
             type,
             cellPhone,
             rooms: rooms.split(',').map(room => room.trim()),
-            reference: reference.split(',').map(ref => ref.trim()),
+            reference: reference.split(',').map(ref => ref.trim().toUpperCase()),
             contract,
             contractTime,
             valor

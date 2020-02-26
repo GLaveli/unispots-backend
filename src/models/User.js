@@ -6,6 +6,8 @@ const UserSchema = new mongoose.Schema({
     email: String,
     cellPhone: String,
     passWord: String,
+    isStudent: Boolean,
+    course: String,
 });
 
 
